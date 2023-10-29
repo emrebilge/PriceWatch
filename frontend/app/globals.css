@@ -69,8 +69,10 @@ body {
   font-weight: 600 !important;
 }
 
-.ais-RefinementList-showMore:hover{
+.ais-RefinementList-showMore:hover, .dark .ais-RefinementList-showMore:hover{
   cursor: pointer !important;
+  background-color: #4648a9 !important;
+  transition: background-color 0.38s ease, color 0.3s ease;
 }
 
 .ais-RangeInput-submit{
@@ -78,6 +80,13 @@ body {
   /* font-color:rgb(57, 57, 57) !important; */
   font-weight: 600 !important;
 }
+
+.ais-RangeInput-submit:hover{
+  background-color: #4648a9 !important;
+  transition: background-color 0.38s ease, color 0.3s ease;
+
+}
+
 
 .stop-select {
   user-drag: none;
@@ -91,3 +100,10 @@ body {
 .update-font{
   font-weight: 650 !important;
 }
+
+.view-retailer-button:hover, .dark .view-retailer-button:hover{
+  background-color: #4648a9 !important;
+  cursor: pointer;
+  transition: background-color 0.38s ease, color 0.3s ease;
+}
+

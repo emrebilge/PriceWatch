@@ -40,7 +40,7 @@ function Hit({ hit }: any) {
 								Updated {(hit.updated_at).slice(5, 10)}
 							</span>
 						</div>
-						<a className="flex items-center justify-center block w-full p-2 font-black text-white transition rounded shadow-xl bg-accent dark:bg-accent-dark hover:bg-dark-900 hover:bg-opacity-90 dark:hover:bg-opacity-90 font-semibold"
+						<a className="view-retailer-button flex items-center justify-center block w-full p-2 font-black text-white transition rounded shadow-xl bg-accent dark:bg-accent-dark  dark:hover:bg-opacity-90 font-semibold"
 							href={hit.link}
 							target="_blank"
 							rel="noopener noreferrer"
