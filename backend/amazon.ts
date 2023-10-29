@@ -175,7 +175,7 @@ async function scrapeAmazon() {
       return Number(last_page);
     });
 
-    let pages_counter = pages - 3 // @dev 0;
+    let pages_counter = pages - 10 // @dev 0;
 
     while (pages_counter < pages) {
       pages_counter++;
