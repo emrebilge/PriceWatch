@@ -42,7 +42,7 @@ const ToggleButton: React.FC = () => {
 
 ) : (
     <img 
-    className="h-8 w-auto sun rounded-full duration-300 hover:bg-slate-200 cursor-pointer"
+    className="h-8 w-auto sun rounded-full duration-300 hover:bg-slate-200 hover:opacity-75 cursor-pointer hover:scale-125"
     src='/sun_icon.svg' 
     alt="Sun Icon" 
   />
