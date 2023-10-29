@@ -45,8 +45,7 @@ function Hit({ hit }: any) {
 								Updated {result}
 							</span>
 						</div>
-						<a
-							className="flex items-center justify-center block w-full p-2 font-black text-white transition rounded shadow-xl bg-accent dark:bg-accent-dark hover:bg-dark-900 hover:bg-opacity-90 dark:hover:bg-opacity-90"
+						<a className="view-retailer-button flex items-center justify-center block w-full p-2 font-black text-white transition rounded shadow-xl bg-accent dark:bg-accent-dark  dark:hover:bg-opacity-90 font-semibold"
 							href={hit.link}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -111,37 +110,11 @@ export default function Home() {
 										showMore={true}
 										searchable={true}
 										classNames={{
-											root: "flex flex-col gap-1",
+											root: "flex flex-col gap-1 ",
 											list: "items-start flex flex-col",
 											labelText: "mx-2",
 										}}
 									/>
-								</div>
-								<div className="flex flex-col h-full gap-3 p-3 rounded-md">
-									<div className="flex flex-col">
-										<div className="flex flex-row items-center justify-between">
-											<span className="text-sm font-bold">Used Price</span>
-										</div>
-										<RangeInput
-											attribute="price"
-											min={0}
-											max={10000}
-											precision={0}
-											className="w-full p-2"
-										/>
-									</div>
-									<div className="flex flex-col">
-										<div className="flex flex-row items-center justify-between">
-											<span className="text-sm font-bold">New Price</span>
-										</div>
-										<RangeInput
-											attribute="price"
-											min={0}
-											max={10000}
-											precision={2}
-											className="w-full p-2"
-										/>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -152,9 +125,9 @@ export default function Home() {
 						<Pagination />
 						<HitsPerPage
 							items={[
-								{ label: "5 hits per page", value: 5 },
 								{ label: "10 hits per page", value: 10, default: true },
 								{ label: "20 hits per page", value: 20 },
+								{ label: "30 hits per page", value: 30 }
 							]}
 						/>
 					</div>
