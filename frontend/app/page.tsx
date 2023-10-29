@@ -21,26 +21,26 @@ function Hit({ hit }: any) {
 	return (
 		<a
 			href="#"
-			className="group block mb-3 px-2 py-4 dark:bg-bg-secondary-dark dark:rounded-3xl rounded-3xl bg-white h-full"
+			className="block h-full px-2 py-4 mb-3 bg-white group dark:bg-bg-secondary-dark dark:rounded-3xl rounded-3xl"
 		>
 			<div className="flex flex-row">
 				<div className="bg-white w-[200px] h-[150px] rounded-[16px]">
-					<img className="h-full w-full object-contain" src={hit.image} />
+					<img className="object-contain w-full h-full" src={hit.image} />
 				</div>
-				<div className="w-full mt-3 flex justify-between text-sm px-3">
+				<div className="flex justify-between w-full px-3 mt-3 text-sm">
 					<div className="flex flex-col w-full gap-3">
 						<h3 className="font-medium text-gray-900 dark:text-gray-300 group-hover:underline group-hover:underline-offset-4 line-clamp-2">
 							{hit.title}
 						</h3>
-						<div className="flex flex-row justify-between items-center">
+						<div className="flex flex-row items-center justify-between">
 							<span className="text-xl font-black dark:text-gray-200">
 								${Number(hit.price).toFixed(2)}
 							</span>
 							<span className="text-sm font-black text-green-700 dark:text-green-400">
-								Save $1,540 (50%)
+								Updated {(hit.updated_at).slice(5, 10)}
 							</span>
 						</div>
-						<a className="w-full block rounded bg-accent dark:bg-accent-dark p-2 font-black transition text-white hover:bg-dark-900 flex items-center justify-center shadow-xl hover:bg-opacity-90 dark:hover:bg-opacity-90"
+						<a className="flex items-center justify-center block w-full p-2 font-black text-white transition rounded shadow-xl bg-accent dark:bg-accent-dark hover:bg-dark-900 hover:bg-opacity-90 dark:hover:bg-opacity-90"
 							href={hit.link}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -84,7 +84,7 @@ export default function Home() {
     
 		<InstantSearch
 			searchClient={searchClient}
-			indexName="amazon"
+			indexName="amazon_testing"
 			insights={true}
       
 		>
@@ -92,9 +92,9 @@ export default function Home() {
 				<SearchBox 
           placeholder="Search for deals"
         />
-				<div className="flex flex-col md:flex-row gap-3 h-full w-full">
+				<div className="flex flex-col w-full h-full gap-3 md:flex-row">
 					<button
-						className="flex flex-col gap-3 bg-bg-secondary text-gray-700 dark:text-gray-200 dark:bg-bg-secondary-dark  py-3 rounded text-sm font-bold rounded-lg"
+						className="flex flex-col gap-3 py-3 text-sm font-bold text-gray-700 rounded rounded-lg bg-bg-secondary dark:text-gray-200 dark:bg-bg-secondary-dark"
 						onClick={(e) => {
 							if (e.target === e.currentTarget) return;
 							e.preventDefault();
@@ -102,8 +102,8 @@ export default function Home() {
 						}}
 					>
 						<div className="flex flex-col w-full px-4">
-							<div className="flex flex-col items-center sm:flex-row md:flex-col my-4 items-start rounded-md w-full h-full">
-								<div className="rounded-md p-3">
+							<div className="flex flex-col items-start items-center w-full h-full my-4 rounded-md sm:flex-row md:flex-col">
+								<div className="p-3 rounded-md">
 									<RefinementList
 										attribute="category"
 										searchablePlaceholder="Search categories"
@@ -116,9 +116,9 @@ export default function Home() {
 										}}
 									/>
 								</div>
-								<div className="flex flex-col gap-3 rounded-md p-3 h-full">
+								<div className="flex flex-col h-full gap-3 p-3 rounded-md">
 									<div className="flex flex-col">
-										<div className="flex flex-row justify-between items-center">
+										<div className="flex flex-row items-center justify-between">
 											<span className="text-sm font-bold">Used Price</span>
 										</div>
 										<RangeInput
@@ -130,7 +130,7 @@ export default function Home() {
 										/>
 									</div>
 									<div className="flex flex-col">
-										<div className="flex flex-row justify-between items-center">
+										<div className="flex flex-row items-center justify-between">
 											<span className="text-sm font-bold">New Price</span>
 										</div>
 										<RangeInput
@@ -145,7 +145,7 @@ export default function Home() {
 							</div>
 						</div>
 					</button>
-					<div className="h-full w-full flex flex-col gap-2">
+					<div className="flex flex-col w-full h-full gap-2">
 						<CurrentRefinements />
 						<HitsGrid />
 						<Pagination />

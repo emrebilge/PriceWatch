@@ -70,11 +70,11 @@ export const categories = [
     // "url": "https://www.amazon.com/s?i=appliances&bbn=1015897601"
     "url": "https://www.amazon.com/s?i=appliances&bbn=10158976011"
   },
-  {
+/*   {
     "name": "Video Games",
     // "url": "https://www.amazon.com/s?i=videogames&bbn=1015897601"
     "url":"https://www.amazon.com/s?i=videogames&bbn=10158976011"
-  },
+  }, */
   {
     "name": "Baby",
     // "url": "https://www.amazon.com/s?i=baby-products&bbn=1015897601"
@@ -90,11 +90,11 @@ export const categories = [
     // "url": "https://www.amazon.com/s?i=arts-crafts&bbn=1015897601"
     "url": "https://www.amazon.com/s?i=arts-crafts&bbn=10158976011"
   },
-  {
+/*   {
     "name": "Movies & TV",
     // "url": "https://www.amazon.com/s?i=dvd&bbn=1015897601"
     "url": "https://www.amazon.com/s?i=dvd&bbn=10158976011"
-  },
+  }, */
   {
     "name": "Musical Instruments",
     // "url": "https://www.amazon.com/s?i=mi&bbn=1015897601"
@@ -105,10 +105,10 @@ export const categories = [
     // "url": "https://www.amazon.com/s?i=beauty&bbn=1015897601"
     "url": "https://www.amazon.com/s?i=beauty&bbn=10158976011"
   },
-  {
+/*   {
     "name": "Home & Business Services",
     "url": "https://www.amazon.com/s?i=local-services&bbn=1015897601"
-  },
+  }, */
 ]
 
 export type Category = {
@@ -201,7 +201,7 @@ async function scrapeAmazon() {
             };
           });
 
-          if (title && image && link && price && asin) products.push({ title, image, link, price, objectId: asin });
+          if (title && image && link && price && asin) products.push({ title, image, link, price, objectId: asin, updated_at: new Date().toISOString() });
         }
         return products;
       })
