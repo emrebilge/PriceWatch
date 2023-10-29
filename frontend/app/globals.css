@@ -66,6 +66,7 @@ body {
 .ais-RefinementList-showMore{
   background-color: #5D5FE6 !important;
   /* font-color:rgb(57, 57, 57) !important; */
+  font-weight: 600 !important;
 }
 
 .ais-RefinementList-showMore:hover{
@@ -75,6 +76,7 @@ body {
 .ais-RangeInput-submit{
   background-color: #5D5FE6 !important;
   /* font-color:rgb(57, 57, 57) !important; */
+  font-weight: 600 !important;
 }
 
 .stop-select {
@@ -84,4 +86,8 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+.update-font{
+  font-weight: 650 !important;
 }
