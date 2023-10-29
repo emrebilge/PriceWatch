@@ -19,7 +19,7 @@ const searchClient = algoliasearch(
 
 
 
-function Hit({ hit }) {
+function Hit({ hit }: any) {
 	return (
 		<a
 			href="#"
@@ -57,7 +57,7 @@ function Hit({ hit }) {
 	);
 }
 
-function HitsGrid(props) {
+function HitsGrid(props: any) {
 	const { hits } = useHits(props);
 	return (
 		<div>
