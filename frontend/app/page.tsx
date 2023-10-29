@@ -37,7 +37,7 @@ function Hit({ hit }: any) {
 						<h3 className="font-medium text-gray-900 dark:text-gray-300 group-hover:underline group-hover:underline-offset-4 line-clamp-2">
 							{hit.title}
 						</h3>
-						<div className="flex flex-col md:flex-row items-center md:justify-between">
+						<div className="flex flex-col lg:flex-row items-center lg:justify-between">
 							<span className="text-xl font-black dark:text-gray-200">
 								${Number(hit.price).toFixed(2)}
 							</span>

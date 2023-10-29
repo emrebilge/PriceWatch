@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <header>
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 text-gray-900 dark:text-gray-200"
+        className="mx-auto flex max-w-7xl items-center justify-between pt-4 pr-2 pl-2 md:px-6 lg:px-8 text-gray-900 dark:text-gray-200"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -23,10 +23,7 @@ function Navbar() {
             />
           </a>
         </div>
-
-        <div className="flex justify-between w-full lg:w-auto">
-          <ToggleButton />
-        </div>
+          <ToggleButton className="w-fit"/>
       </nav>
     </header>
   );
