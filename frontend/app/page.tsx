@@ -125,7 +125,8 @@ export default function Home() {
 											attribute="price"
 											min={0}
 											max={10000}
-											precision={2}
+											
+											precision={0}
 											className="w-full p-2"
 										/>
 									</div>
