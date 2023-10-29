@@ -42,13 +42,12 @@ function Hit({ hit }: any) {
 								Save $1,540 (50%)
 							</span>
 						</div>
-						<a
-							className="w-full block rounded bg-accent dark:bg-accent-dark p-2 font-black transition text-white hover:bg-green-700 flex items-center justify-center"
+						<a className="w-full block rounded bg-accent dark:bg-accent-dark p-2 font-black transition text-white hover:bg-dark-900 flex items-center justify-center shadow-xl hover:bg-opacity-90 dark:hover:bg-opacity-90"
 							href={hit.link}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							View on Amazon &nbsp;<span aria-hidden="true">&rarr;</span>
+							View on Retailer &nbsp;<span aria-hidden="true">&rarr;</span>
 						</a>
 					</div>
 				</div>
@@ -89,9 +88,12 @@ export default function Home() {
 			searchClient={searchClient}
 			indexName="amazon"
 			insights={true}
+      
 		>
 			<div className="flex flex-col gap-3 ">
-				<SearchBox />
+				<SearchBox 
+          placeholder="Search for deals"
+        />
 				<div className="flex flex-col md:flex-row gap-3 h-full w-full">
 					<button
 						className="flex flex-col gap-3 bg-bg-secondary text-gray-700 dark:text-gray-200 dark:bg-bg-secondary-dark  py-3 rounded text-sm font-bold rounded-lg"

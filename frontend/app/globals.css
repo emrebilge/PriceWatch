@@ -12,3 +12,67 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+.ais-SearchBox-input::placeholder {
+  font-weight: 600 !important;
+}
+
+
+.dark .ais-SearchBox-input {
+  background-color: rgb(165, 165, 165) !important;
+  color: rgb(57, 57, 57) !important;
+}
+
+.dark .ais-SearchBox-input::placeholder {
+  color: rgb(57, 57, 57) !important;
+  font-weight: 500 !important;
+}
+
+
+body {
+  transition: background-color 0.38s ease, color 0.3s ease;
+}
+
+.dark .ais-RefinementList-list{
+  color: rgb(117, 117, 117) !important;
+}
+
+.dark .ais-RefinementList-count {
+  background-color: rgb(166, 166, 174);
+  color: rgb(57, 57, 57) !important;
+}
+
+/* .dark input[type="checkbox"]:unchecked{
+  background-color: rgb(89, 89, 89) !important;
+} */
+
+.dark .ais-RangeInput-input--min, .dark .ais-RangeInput-input--max {
+  background-color: rgb(166, 166, 174);
+  color: rgb(57, 57, 57) !important;
+  font-weight: 500 !important;
+}
+
+.dark .ais-RangeInput-input--min::placeholder, .dark .ais-RangeInput-input--max::placeholder {
+  background-color: rgb(166, 166, 174);
+  color: rgb(57, 57, 57) !important;
+  font-weight: 500 !important;
+}
+
+.ais-CurrentRefinements-item{
+  background-color: #5D5FE6 !important;
+  font-weight: 600 !important;
+}
+
+.ais-RefinementList-showMore{
+  background-color: #5D5FE6 !important;
+  /* font-color:rgb(57, 57, 57) !important; */
+}
+
+.ais-RefinementList-showMore:hover{
+  cursor: pointer !important;
+}
+
+.ais-RangeInput-submit{
+  background-color: #5D5FE6 !important;
+  /* font-color:rgb(57, 57, 57) !important; */
+}
