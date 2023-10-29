@@ -36,11 +36,11 @@ function Hit({ hit }: any) {
 							<span className="text-xl font-black dark:text-gray-200">
 								${Number(hit.price).toFixed(2)}
 							</span>
-							<span className="text-sm font-black text-green-700 dark:text-green-400">
+							<span className="text-sm font-black text-green-700 dark:text-green-400 update-font">
 								Updated {(hit.updated_at).slice(5, 10)}
 							</span>
 						</div>
-						<a className="flex items-center justify-center block w-full p-2 font-black text-white transition rounded shadow-xl bg-accent dark:bg-accent-dark hover:bg-dark-900 hover:bg-opacity-90 dark:hover:bg-opacity-90"
+						<a className="view-retailer-button flex items-center justify-center block w-full p-2 font-black text-white transition rounded shadow-xl bg-accent dark:bg-accent-dark  dark:hover:bg-opacity-90 font-semibold"
 							href={hit.link}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -110,7 +110,7 @@ export default function Home() {
 										showMore={true}
 										searchable={true}
 										classNames={{
-											root: "flex flex-col gap-1",
+											root: "flex flex-col gap-1 ",
 											list: "items-start flex flex-col",
 											labelText: "mx-2",
 										}}
