@@ -17,7 +17,7 @@ function Navbar() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Pricewatch</span>
             <img
-              className="h-8 w-auto"
+              className="h-8 w-auto select-none stop-select"
               src="/logo.svg"
               alt=""
             />
