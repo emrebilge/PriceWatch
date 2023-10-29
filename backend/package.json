@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "main": "dist/core.js",
+  "dependencies": {
+    "@types/node": "^20.8.9",
+    "algoliasearch": "^4.20.0",
+    "express": "^4.18.2",
+    "puppeteer": "^21.4.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-adblocker": "^2.13.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "start": "node dist/core.js",
+    "dev": "tsx watch ./core.ts"
+  }
+}
