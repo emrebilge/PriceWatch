@@ -87,6 +87,15 @@ body {
 
 }
 
+* {
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 
 .stop-select {
   user-drag: none;
@@ -107,3 +116,12 @@ body {
   transition: background-color 0.38s ease, color 0.3s ease;
 }
 
+.ais-RefinementList-item:hover{
+  color: rgb(119, 38, 177) !important;
+  cursor:pointer !important;
+}
+
+.dark .ais-RefinementList-item:hover{
+  color: rgb(192, 176, 199) !important;
+  cursor:pointer !important;
+}
