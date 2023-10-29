@@ -11,79 +11,99 @@ import { minimal_args } from "./puppeteer";
 export const categories = [
   {
     "name": "Clothing, Shoes & Jewelry",
-    "url": "https://www.amazon.com/s?i=fashion&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=fashion&bbn=10158976011"
+    // "url": "https://www.amazon.com/s?i=fashion&bbn=1015897601"
   },
   {
     "name": "Home & Kitchen",
-    "url": "https://www.amazon.com/s?i=garden&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=garden&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=garden&bbn=10158976011"
   },
   {
     "name": "Electronics",
-    "url": "https://www.amazon.com/s?i=electronics&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=electronics&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=electronics&bbn=10158976011"
   },
   {
     "name": "Tools & Home Improvement",
-    "url": "https://www.amazon.com/s?i=tools&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=tools&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=tools&bbn=10158976011"
   },
   {
     "name": "Sports & Outdoors",
-    "url": "https://www.amazon.com/s?i=sporting&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=sporting&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=sporting&bbn=10158976011"
   },
   {
     "name": "Toys & Games",
-    "url": "https://www.amazon.com/s?i=toys-and-games&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=toys-and-games&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=toys-and-games&bbn=10158976011"
+
   },
   {
     "name": "Garden & Outdoor",
-    "url": "https://www.amazon.com/s?i=lawngarden&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=lawngarden&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=lawngarden&bbn=10158976011"
   },
   {
     "name": "Automotive Parts & Accessories",
-    "url": "https://www.amazon.com/s?i=automotive&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=automotive&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=automotive&bbn=10158976011"
   },
   {
     "name": "Office Products",
-    "url": "https://www.amazon.com/s?i=office-products&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=office-products&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=office-products&bbn=10158976011"
   },
   {
     "name": "Cell Phones & Accessories",
-    "url": "https://www.amazon.com/s?i=mobile&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=mobile&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=mobile&bbn=10158976011"
   },
   {
     "name": "Health, Household & Baby Care",
-    "url": "https://www.amazon.com/s?i=hpc&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=hpc&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=hpc&bbn=10158976011"
   },
   {
     "name": "Appliances",
-    "url": "https://www.amazon.com/s?i=appliances&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=appliances&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=appliances&bbn=10158976011"
   },
   {
     "name": "Video Games",
-    "url": "https://www.amazon.com/s?i=videogames&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=videogames&bbn=1015897601"
+    "url":"https://www.amazon.com/s?i=videogames&bbn=10158976011"
   },
   {
     "name": "Baby",
-    "url": "https://www.amazon.com/s?i=baby-products&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=baby-products&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=baby-products&bbn=10158976011"
   },
   {
     "name": "Pet Supplies",
-    "url": "https://www.amazon.com/s?i=pets&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=pets&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=pets&bbn=10158976011"
   },
   {
     "name": "Arts, Crafts & Sewing",
-    "url": "https://www.amazon.com/s?i=arts-crafts&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=arts-crafts&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=arts-crafts&bbn=10158976011"
   },
   {
     "name": "Movies & TV",
-    "url": "https://www.amazon.com/s?i=dvd&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=dvd&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=dvd&bbn=10158976011"
   },
   {
     "name": "Musical Instruments",
-    "url": "https://www.amazon.com/s?i=mi&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=mi&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=mi&bbn=10158976011"
   },
   {
     "name": "Beauty & Personal Care",
-    "url": "https://www.amazon.com/s?i=beauty&bbn=1015897601"
+    // "url": "https://www.amazon.com/s?i=beauty&bbn=1015897601"
+    "url": "https://www.amazon.com/s?i=beauty&bbn=10158976011"
   },
   {
     "name": "Home & Business Services",

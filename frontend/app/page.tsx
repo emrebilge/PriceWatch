@@ -17,8 +17,6 @@ const searchClient = algoliasearch(
 	"ae611d14f0b56aaa064f6cce5bbaa7ff"
 );
 
-
-
 function Hit({ hit }: any) {
 	return (
 		<a
