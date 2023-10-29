@@ -17,6 +17,8 @@ const searchClient = algoliasearch(
 	"ae611d14f0b56aaa064f6cce5bbaa7ff"
 );
 
+
+
 function Hit({ hit }) {
 	return (
 		<a
@@ -72,7 +74,17 @@ function HitsGrid(props) {
 
 export default function Home() {
 	const [filtersVisible, setFiltersVisible] = useState(false);
+  const toggleDarkMode = () => {
+    if (document.body.classList.contains('dark')) {
+      document.body.classList.remove('dark');
+    } else {
+      document.body.classList.add('dark');
+    }
+  };
+
+
 	return (
+    
 		<InstantSearch
 			searchClient={searchClient}
 			indexName="amazon"

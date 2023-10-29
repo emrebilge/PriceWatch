@@ -1,3 +1,11 @@
+// use client component
+"use client"
+
+
+
+// import React from 'react';
+import ToggleButton from './ToggleButton'; // Adjust the path if it's in a different directory
+
 function Navbar() {
   return (
     <header>
@@ -15,26 +23,13 @@ function Navbar() {
             />
           </a>
         </div>
-        <div className="hidden lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6"
-          >Features</a
-          >
-          <a href="#" className="text-sm font-semibold leading-6"
-          >Marketplace</a
-          >
-          <a href="#" className="text-sm font-semibold leading-6"
-          >Company</a
-          >
-        </div>
-        <div className="flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6"
-          >
-            Join our Discord <span aria-hidden="true">&rarr;</span></a
-          >
+
+        <div className="flex justify-between w-full lg:w-auto">
+          <ToggleButton />
         </div>
       </nav>
     </header>
-)
+  );
 }
 
 export default Navbar;

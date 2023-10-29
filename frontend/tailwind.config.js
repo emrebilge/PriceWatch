@@ -7,6 +7,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class', // This enables dark mode on Tailwind CSS
   theme: {
     extend: {
       fontFamily: {
