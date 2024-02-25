@@ -21,3 +21,4 @@ yarn dev
 ```
 
 ## backend
+The backend utilizes Algolia with search queries to interface with our database.
